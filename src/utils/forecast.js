@@ -11,7 +11,7 @@ const forecast = (longitude,lattitude, callstack) =>{
           callstack('Wrong co-ordinates', undefined)
        }
        else{
-          callstack(undefined,'The tempreture is '+ body.current.temperature+' degrees and it feels like '+body.current.feelslike+' degrees and '+body.current.weather_descriptions[0])
+          callstack(undefined,'The tempreture is '+ body.current.temperature+' degrees and it feels like '+body.current.feelslike+' degrees and '+body.current.weather_descriptions[0]+' with humidity of '+body.current.humidity)
        }
     })
  }
